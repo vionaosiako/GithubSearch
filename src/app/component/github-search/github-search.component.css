@@ -1,0 +1,20 @@
+.search{
+    width: 80%;    
+}
+
+.submit{
+    background-color: aqua;
+    color: #000000;
+}
+
+.searchSearch{
+    background-color: bisque;
+    padding: 40px;
+}
+.gitUsernameForm{
+    background-color: aqua;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
