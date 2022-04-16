@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { GithubSearchComponent } from './component/github-search/github-search.component';
 
 
 
@@ -13,6 +14,7 @@ import { FooterComponent } from './component/footer/footer.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
+    GithubSearchComponent,
    
 
   ],
