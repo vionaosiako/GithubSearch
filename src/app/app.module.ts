@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
@@ -11,6 +9,8 @@ import { GithubSearchComponent } from './component/github-search/github-search.c
 import { HomeComponent } from './component/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GithubSearchRepoComponent } from './component/github-search-repo/github-search-repo.component';
+
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -28,6 +28,7 @@ import { GithubSearchRepoComponent } from './component/github-search-repo/github
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule
     
   ],
   providers: [],
