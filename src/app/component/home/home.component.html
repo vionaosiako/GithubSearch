@@ -5,9 +5,9 @@
 
 <div class="homeHome">
     <div class="container home">
-        <div class ="row text-center">            
+        <div class ="row text-center alignHome">            
             <div class = "col-md-6">
-                <h3>Links to my repository</h3>
+                <h1>Links to my repository</h1>
                 <div class="row">
                     <div class="col-lg-4">
                         <button class="btn btn-outline-warning"><a href="https://github.com/vionaosiako/myPortfolio">My Portfolio</a></button>
@@ -49,7 +49,20 @@
                 
             </div>
             <div class="col-md-6">
-                <img id='gh-pic'src='https://avatars.githubusercontent.com/u/98155614?v=4'>
+                <img src="{{user.avatar_url}}" alt="profile pic" style="height: 50%;">
+                <div class="userFlex">
+                    <p><b>Name: </b>{{user.name}}</p>
+                    <p><b>Username: </b>{{user.login}}</p>
+                </div>
+                <div class="userFlex">
+                    <p><b>Following: </b>{{user.following}}</p>
+                    <p><b>Followers: </b>{{user.followers}}</p>
+                </div>
+                <h3><b>Bio</b></h3>
+                <p>{{user.bio}}</p>
+                <button class="btnGithubUrl btn btn-outline-warning"><a href="https://github.com/vionaosiako">Go to my Github</a></button>
+                
+
             </div>
 
         </div>

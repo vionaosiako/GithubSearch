@@ -10,6 +10,11 @@
 .home{
     background-color: antiquewhite;
     padding: 30px;
+    
+}
+
+.alignHome{
+    align-items: center;
 }
 
 button{
@@ -22,5 +27,14 @@ button{
 button a{
     text-decoration: none;
     color: #000000;
-    font-weight: bolder;
+}
+
+.btnGithubUrl{
+    width: 30%;
+    height: 50px;
+}
+
+.userFlex{
+    display: flex;
+    justify-content: space-between;
 }

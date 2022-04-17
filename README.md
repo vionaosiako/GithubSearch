@@ -1,27 +1,64 @@
 # GithubSearch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+## Table of Content
 
-## Development server
++ [Description](#description)
++ [Requirements](#requirements)
++ [Technology Used](#technology-used)
++ [Reference](#reference)
++ [Licence](#licence)
++ [Authors Info](#author-Info)
++ [Git Hub](#Git-Hub)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Description
+The application allows users search for github users. It enable one to find specific users and their repos. The application consumers Github API to help find data. Personal token is also used.
 
-## Code scaffolding
+# Requirements and set up
+* Internet connection.
+* A browser eg chrome, mozilla firefox.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Set Up Instructions
+To run: 
+* git clone https://github.com/vionaosiako/GithubSearch
+* cd quotesNest
+* npm install
+* ng serve Navigate to http://localhost:4200/
 
-## Build
+# Technologies Used
+* HTML5
+* CSS3
+* Bootstrap
+* TypeScript
+* Git
+* Github
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Reference
++ lms
 
-## Running unit tests
+([Go Back to the top](#description))
+## Licence
+MIT License
+Copyright (c) [2022] [Viona Osiako]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[Go Back to the top]((#description))
+## Authors Info
+Linked - [Viona Osiako](https://www.linkedin.com/in/viona-osiako-54094a170)
+[Go Back to the top](#description))
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Git Hub Link
+https://github.com/vionaosiako/GithubSearch

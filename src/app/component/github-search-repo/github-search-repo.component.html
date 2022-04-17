@@ -1,17 +1,31 @@
 <div class="row searchSearch">
     <div class="col.md-6">
         
-    <h1 class="text-center">Find github repository for a specific user</h1>
-    <div class="container gitUsernameForm">
-        <form class="form-control search" #RepoForm='ngForm'>
-            <div class="mb-3">
-                <label for="gitUsername" class="form-label">Enter github username:</label>
-                <input type="text" class="form-control" id="gitUsername">
-            </div>
-        
-            <button type="submit" class="btn submit btn-outline-warning btn-lg">Search Now</button>
-        </form> 
+        <h1 class="text-center">Find github repository for a specific user</h1>
+        <div class="container gitUsernameForm">
+            <form class="form-control search" #RepoForm='ngForm'>
+                <div class="mb-3">
+                    <label for="gitUsername" class="form-label">Enter github username:</label>
+                    <input type="text" class="form-control" id="gitUsername">
+                </div>
+            
+                <button type="submit" class="btn submit btn-outline-warning btn-lg">Search Now</button>
+            </form> 
+        </div>
     </div>
+    
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div *ngFor ='let repository of repos'>
+            <ul>
+                <h4>Repository.</h4>
+                <li> Name: {{repository.name}}</li>
+                <li>Html_url: {{repository.html_url}}</li>
+                <li>Description: {{repository.description}}</li>
+            </ul>
+        </div>
     </div>
 </div>
 

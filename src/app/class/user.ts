@@ -1,12 +1,20 @@
 export class User {
+    avatar_url:string;
     name:string;
-    avatar:string;
+    login:string;
+    following:number;
+    followers:number;
     bio:string;
-    email:any;
-    constructor(name:string, avatar:string, bio:string, email:any){
+    url:string;
+    constructor(avatar_url:string,name:string,login:string, following:number,followers:number,bio:string,url:string ){
+
+        this.avatar_url=avatar_url;
         this.name=name;
-        this.avatar=avatar;
+        this.login=login;
+        this.following = following;
+        this.followers=followers;
         this.bio=bio;
-        this.email;
+        this.url=url;
+        
     }
 }
