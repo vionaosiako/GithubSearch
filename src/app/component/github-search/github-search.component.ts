@@ -19,11 +19,21 @@ export class GithubSearchComponent implements OnInit {
     this.useServiceApi.getUserData().then( (user: any)=>{
       this.userProfile=user;
     })
+
+    this.getUserRepositories();
+  }
+
+  getUserRepositories(){
+    this.useServiceApi.getUsername(this.username);
+    this.useServiceApi.getUserRepos().then( (repos: any)=> {
+      this.repos = repos;
+    })
   }
 
   ngOnInit(): void {
 
     this.searchUser();
+    this.getUserRepositories();
     // this.useServiceApi.getUsers().subscribe(
     //   data => {
     //     this.user = data

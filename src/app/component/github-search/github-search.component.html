@@ -3,17 +3,17 @@
         <h1>Find a github user </h1>
         <form class ="form-inline" #userform='ngForm'>
             <div class="form-group">
-                <input type="text" class="form-control" id="userName" [(ngModel)]="username" name="username" placeholder="Enter a username" required>
+                <input type="text" class="form-control" id="userName" [(ngModel)]="username" name="username" placeholder="Enter a username" (keyup)="searchUser()" required>
             </div><br>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search User</button>
-                <!-- <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search User Repo</button> -->
-            </div>
+                <button (click)="getUserRepositories()" class="btn submit btn-outline-warning btn-lg">Search User Repo</button>
+            </div> -->
         </form>
     </div>
 </div>
-<img src="" alt="">
-<div class ="container">
+
+<div class ="container" style="background-color:aqua;">
     <div class = "row">
         <div class ="col-md-6">
             <img id = "avatar" src={{userProfile.avatar_url}}>
@@ -25,6 +25,18 @@
             <p>Followers: {{userProfile.followers}}</p>
             <p>Following: {{userProfile.following}}</p>
             <p>Account created: {{userProfile.created_at |dateAgo}}</p>
+        </div>
+    </div>
+</div>
+
+<div class ="container" style="background-color:bisque">
+    <div class = "row">
+        <div class = "col-md-4" *ngFor ='let repo of repos'>
+            <hr>
+            <h3>Name: {{repo.name}}</h3>
+            <p>Description:{{repo.description}}</p>
+            <p>created: {{repo.created_at | dateAgo}}</p>
+            <a class = "btn submit btn-outline-warning btn-lg" href = {{repo.html_url}}>Go to Repo!</a>
         </div>
     </div>
 </div>
