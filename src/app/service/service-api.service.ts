@@ -11,9 +11,8 @@ export class ServiceAPIService {
   user = 'vionaosiako'
   private username!:string;
 
-  
-  private apiUrl = environment.apiUrl;
-  private apiKey = environment.apiKey;
+  apiUrl = environment.apiUrl;
+  apiKey = environment.apiKey;
   
   UserURL:string = `https://api.github.com/users/${this.user}`
   RepoURL:string = `https://api.github.com/users/${this.user}/repos`
