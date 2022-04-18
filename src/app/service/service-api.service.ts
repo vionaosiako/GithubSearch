@@ -15,7 +15,7 @@ export class ServiceAPIService {
   apiKey = environment.apiKey;
   
   UserURL:string = `https://api.github.com/users/${this.user}`
-  RepoURL:string = `https://api.github.com/users/${this.user}/repos`
+  // RepoURL:string = `https://api.github.com/users/${this.user}/repos`
   repoName!: string;
   constructor(private http : HttpClient) {}
 
@@ -41,9 +41,9 @@ export class ServiceAPIService {
   getUsers():Observable<any>{
       return this.http.get<any>(this.UserURL)
   }
-  //method to get repos
-  getRepo():Observable<any>{
-    return this.http.get<any>(this.RepoURL)}
+  // //method to get repos
+  // getRepo():Observable<any>{
+  //   return this.http.get<any>(this.RepoURL)}
 
 
 }

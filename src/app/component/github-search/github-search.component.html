@@ -6,7 +6,8 @@
                 <input type="text" class="form-control" id="userName" [(ngModel)]="username" name="username" placeholder="Enter a username" required>
             </div><br>
             <div class="form-group">
-                <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search Now</button>
+                <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search User</button>
+                <!-- <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search User Repo</button> -->
             </div>
         </form>
     </div>
@@ -23,7 +24,7 @@
             <p>Bio: {{userProfile.bio}}</p>
             <p>Followers: {{userProfile.followers}}</p>
             <p>Following: {{userProfile.following}}</p>
-            <p>Account created on: {{userProfile.created_at |date:'medium'}}</p>
+            <p>Account created: {{userProfile.created_at |dateAgo}}</p>
         </div>
     </div>
 </div>
