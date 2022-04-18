@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { DateCountPipe } from './date-count.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 
 
@@ -23,6 +24,7 @@ import { DateCountPipe } from './date-count.pipe';
     GithubSearchComponent,
     HomeComponent,
     DateCountPipe,
+    HighlightDirective,
 
   ],
   imports: [
