@@ -1,5 +1,6 @@
 <div class="container">
     <div class="mt-4">
+        <h1>Find a github user </h1>
         <form class ="form-inline" #userform='ngForm'>
             <div class="form-group">
                 <input type="text" class="form-control" id="userName" [(ngModel)]="username" name="username" placeholder="Enter a username" required>
@@ -10,13 +11,13 @@
         </form>
     </div>
 </div>
-
+<img src="" alt="">
 <div class ="container">
     <div class = "row">
-        <div class ="col-md-7">
-            <img id = "avatar" [src]='userProfile.avatar_url'>
+        <div class ="col-md-6">
+            <img id = "avatar" src={{userProfile.avatar_url}}>
         </div>
-        <div class = "col-md-5">
+        <div class = "col-md-6">
             <h3>Name: {{userProfile.name}}</h3><br>
             <h4>Username: {{userProfile.login}}</h4>
             <p>Bio: {{userProfile.bio}}</p>

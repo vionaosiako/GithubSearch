@@ -15,7 +15,7 @@ export class GithubSearchComponent implements OnInit {
   constructor(private useServiceApi :ServiceAPIService) { }
 
   searchUser(){
-    this.useServiceApi.getUserName(this.username)
+    this.useServiceApi.getUsername(this.username)
     this.useServiceApi.getUserData().then( (user: any)=>{
       this.userProfile=user;
     })

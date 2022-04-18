@@ -8,7 +8,6 @@ import { FooterComponent } from './component/footer/footer.component';
 import { GithubSearchComponent } from './component/github-search/github-search.component';
 import { HomeComponent } from './component/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GithubSearchRepoComponent } from './component/github-search-repo/github-search-repo.component';
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -23,7 +22,6 @@ import { DateCountPipe } from './date-count.pipe';
     FooterComponent,
     GithubSearchComponent,
     HomeComponent,
-    GithubSearchRepoComponent,
     DateCountPipe,
 
   ],

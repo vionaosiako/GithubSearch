@@ -10,22 +10,32 @@ import { environment } from 'src/environments/environment';
 export class ServiceAPIService {
   user = 'vionaosiako'
   private username!:string;
-  // private repoName!:string;
+
   
   private apiUrl = environment.apiUrl;
   private apiKey = environment.apiKey;
   
   UserURL:string = `https://api.github.com/users/${this.user}`
   RepoURL:string = `https://api.github.com/users/${this.user}/repos`
+  repoName!: string;
   constructor(private http : HttpClient) {}
 
-  //for github user
+  //github user
   getUserData(){
     return this.http.get<any[]>(`${this.apiUrl}${this.username}??access_token=+${this.apiKey}`).toPromise()
+    
   }
 
-  getUserName(username:string){
+  getUsername(username:string){
     this.username = username
+  }
+
+  getUserRepos(){
+    return this.http.get<any[]>(`${this.apiUrl}${this.username}/repos??access_token=+${this.apiKey}`).toPromise();
+  }
+
+  getRepos(repositories:string){
+    return this.repoName = repositories
   }
 
   //method to get users
