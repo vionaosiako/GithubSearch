@@ -12,6 +12,7 @@ import { GithubSearchRepoComponent } from './component/github-search-repo/github
 
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { DateCountPipe } from './date-count.pipe';
 
 
 
@@ -23,6 +24,7 @@ import { HttpClientModule } from '@angular/common/http';
     GithubSearchComponent,
     HomeComponent,
     GithubSearchRepoComponent,
+    DateCountPipe,
 
   ],
   imports: [

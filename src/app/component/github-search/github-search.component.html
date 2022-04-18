@@ -1,49 +1,29 @@
-<div class="row searchSearch">
-    <div class="col.md-6">
-        
-        <h1 class="text-center">Find a github user Details</h1>
-        <div class="container gitUsernameForm">
-            <form class="form-control search"  #UserForm='ngForm'>
-                <div class="mb-3">
-                    <label for="gitUsername" class="form-label">Enter github username:</label>
-                    <input type="text" class="form-control" id="gitUsername">
-                </div>
-            
-                <button type="submit" class="btn submit btn-outline-warning btn-lg">Search Now</button>
-            </form> 
-        </div>
+<div class="container">
+    <div class="mt-4">
+        <form class ="form-inline" #userform='ngForm'>
+            <div class="form-group">
+                <input type="text" class="form-control" id="userName" [(ngModel)]="username" name="username" placeholder="Enter a username" required>
+            </div><br>
+            <div class="form-group">
+                <button (click)="searchUser()" class="btn submit btn-outline-warning btn-lg">Search Now</button>
+            </div>
+        </form>
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="{{user.avatar_url}}" alt="" class="avatar">
-        </div>
-        <div class="col-md-6">
-            <p><b>Name: </b>{{user.name}}</p>
-            <p><b>Username: </b>{{user.login}}</p>
-            <p><b>Following: </b>{{user.following}}</p>
-            <p><b>Followers: </b>{{user.followers}}</p>
-            <h3><b>Bio</b></h3>
-            <p>{{user.bio}}</p>
-        </div>
-    </div>
-</div>
-
-<!-- <div class ="container">
+<div class ="container">
     <div class = "row">
         <div class ="col-md-7">
-            <img id = "avatar" [src]='myProfile.avatar_url'>
+            <img id = "avatar" [src]='userProfile.avatar_url'>
         </div>
         <div class = "col-md-5">
-            <h3>Name: {{myProfile.name}}</h3><br>
-            <h4>Username: {{myProfile.login}}</h4>
-            <p>Bio: {{myProfile.bio}}</p>
-            <p>Followers: {{myProfile.followers}}</p>
-            <p>Following: {{myProfile.following}}</p>
-            <p>Account created on: {{myProfile.created_at |date:'medium'}}</p>
+            <h3>Name: {{userProfile.name}}</h3><br>
+            <h4>Username: {{userProfile.login}}</h4>
+            <p>Bio: {{userProfile.bio}}</p>
+            <p>Followers: {{userProfile.followers}}</p>
+            <p>Following: {{userProfile.following}}</p>
+            <p>Account created on: {{userProfile.created_at |date:'medium'}}</p>
         </div>
-    </div> -->
-
+    </div>
+</div>
 

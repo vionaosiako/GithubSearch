@@ -8,15 +8,17 @@ import { ServiceAPIService } from 'src/app/service/service-api.service';
   styleUrls: ['./github-search-repo.component.css']
 })
 export class GithubSearchRepoComponent implements OnInit {
-repos!:any;
+  username:string= "";
+  repos!:any;
   
   constructor(private useServiceApi :ServiceAPIService) { }
 
   ngOnInit(): void {
+
     this.useServiceApi.getRepo().subscribe(
       data => {
         this.repos = data
-      // console.log(this.repos);
+      console.log(this.repos);
     }
     )
   }

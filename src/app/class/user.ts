@@ -6,6 +6,7 @@ export class User {
     followers:number;
     bio:string;
     url:string;
+    
     constructor(avatar_url:string,name:string,login:string, following:number,followers:number,bio:string,url:string ){
 
         this.avatar_url=avatar_url;
